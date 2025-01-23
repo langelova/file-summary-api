@@ -1,0 +1,16 @@
+fastapi~=0.115
+sqlalchemy~=2.0
+langchain~=0.3
+langchain-community~=0.3
+uvicorn~=0.34
+pydantic-settings~=2.7
+textract~=1.6
+psycopg2-binary~=2.9
+openai~=1.59
+python-multipart~=0.0.20
+langchain_openai~=0.3.1
+flake8~=7.1
+sqlalchemy-utils~=0.41.2
+pytest~=8.3.4
+pytest-asyncio~=0.25.2
+pytest-mock~=3.14.0
