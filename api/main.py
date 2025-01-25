@@ -43,7 +43,7 @@ async def process_file(uploaded_file: UploadFile, db: Session) -> dict:
     file_name = uploaded_file.filename
     file_format = os.path.splitext(file_name)[-1].lower()
 
-    if file_format not in [".pdf", ".docx", ".txt"]:
+    if file_format not in [".pdf", ".docx", ".doc", ".txt"]:
         return {"name": file_name, "status": "skipped", "reason": "Unsupported format."}
 
     file_path = os.path.join(UPLOAD_FOLDER, file_name)
