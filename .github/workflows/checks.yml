@@ -8,17 +8,6 @@ jobs:
     name: Test and Lint
     runs-on: ubuntu-20.04
     steps:
-      - name: create env file
-        run: |
-          touch .env
-          echo VARIABLE=${{ secrets.DB_HOST }} >> .env
-          echo VARIABLE=${{ secrets.DB_PORT }} >> .env
-          echo VARIABLE=${{ secrets.DB_NAME }} >> .env
-          echo VARIABLE=${{ secrets.DB_USER }} >> .env
-          echo VARIABLE=${{ secrets.DB_PASS }} >> .env
-          echo VARIABLE=${{ secrets.CHATGPT_API_KEY }} >> .env
-          echo VARIABLE=${{ secrets.ENV }} >> .env
-          echo VARIABLE=${{ secrets.VERSION }} >> .env
       - name: Checkout
         uses: actions/checkout@v2
       - name: Test
