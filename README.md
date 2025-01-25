@@ -22,3 +22,42 @@ Retrieve file content or summaries by ID.
 
 
 
+### Prerequisites
+
+Ensure you have the following installed on your machine:
+
+*   Docker
+
+*   Docker Compose
+
+
+### Installation
+
+1.  **Clone the Repository**:
+
+```
+git clone https://github.com/langelova/file-summary-api.git
+```
+
+2.  **Create a .env file following example.env**:
+
+```
+NOTE: You'll need a working API key for OpenAI
+```
+
+3.  **Build and start containers**:
+
+```
+docker-compose up --build
+```
+
+4. **Run tests**:
+```
+docker compose run --rm app sh -c "pytest"
+```
+
+5. **Interact with the api**:
+```
+http://localhost:5000/docs/
+```
+
